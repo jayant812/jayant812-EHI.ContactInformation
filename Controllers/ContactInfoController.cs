@@ -31,7 +31,8 @@ namespace EHI.Controllers
 
         [Route("~/EHI/GetContactInformationById")]
         public EmpContactInfo GetDataById(long id)
-        {
+        {        var password=" ";
+
             return objRepository.GetDataById(id);
         }
 
