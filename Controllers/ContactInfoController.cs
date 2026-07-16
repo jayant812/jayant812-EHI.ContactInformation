@@ -25,6 +25,7 @@ namespace EHI.Controllers
         [Route("~/EHI/GetContactInformation")]
         public IEnumerable<EmpContactInfo> Get()
         {
+        var password=" ";
             return objRepository.GetData();
         }
 
