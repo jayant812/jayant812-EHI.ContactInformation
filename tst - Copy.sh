@@ -11,7 +11,7 @@ docker -f docker.ci.build.yml -p $JOB_NAME down
 # Build images
 docker -f docker.yml -p $JOB_NAME build --pull
 
-docker login -u testuser -p   $REGISTRY
+docker login -u testuser -p  33 $REGISTRY
 
 #Push curreng tag
 docker -f docker.yml push
